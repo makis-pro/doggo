@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+/* menu styles  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .8rem;
+}
+
+#menuIcon{
+    display: block;
+    transition: 2s;
+    padding-top: 1rem;
+}
+
+#menuList{
+    display: none;
+    line-height: 1.7rem;
+    transition: 2s;
+    cursor: pointer;
+}
+
+menu svg{
+    height: 1rem;
+    width: 2rem;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li:hover{
+    background-color: rgb(225, 148, 96);
+    color: #c6c6c6;
+    border-radius: 8%;
+    font-size: large;
+    border-right: 2px solid royalblue;
+}
+
+header svg{
+    height: 1rem;
+    width: 1rem;
+    padding-top: .2rem;
+    color: gray;
+}
+
+ul.register{
+    display: inline;
+    line-height: 1.5rem;
+}
+
+header ul li a{
+    padding: .2rem;
+    text-decoration: none;
+}
+
+/* section */
+
+section{
+    padding: 1rem;
+}
+
+.section1{
+    background-color: rgb(215, 196, 215);
+    padding: .5rem;
+    text-align: center;
+}
+
+button{
+    padding: .5rem;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+button.learn-more,
+button.log-in{
+    background-color: antiquewhite;
+}
+
+button.sign-in{
+    background-color: rgb(227, 192, 148);
+    margin-left: .2rem;
+}
+
+button.get-started{
+    background-color: rgb(230, 138, 73);
+    margin-left: .6rem;
+}
+
+form{
+    line-height: 2rem;
+}
+
+
+
+
+
+
+
+/* media screen adjustments */
+
+@media (min-width: 768px) {
+    header ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: .5rem;
+    }
+
+    #menuIcon{
+        display: none;
+    }
+
+    #menuList{
+        display: block;
+        cursor: pointer;
+    }
+
+    .section1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    form{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: large;
+    }
+
+}
