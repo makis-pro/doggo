@@ -7,59 +7,31 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: aliceblue;
+    font-size: small;
 }
 
-/* menu styles  */
 
-header{
+/* header styles  */
+
+#menuIcon{
+    cursor: pointer;
+    padding: .4rem;
+    background-color: white;
+}
+
+#menuList{
+    display: none;
+}
+
+menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .5rem .8rem;
 }
 
-#menuIcon{
-    display: block;
-    transition: 2s;
-    padding-top: 1rem;
-}
-
-#menuList{
-    display: none;
-    line-height: 1.7rem;
-    transition: 2s;
-    cursor: pointer;
-}
-
-menu svg{
-    height: 1rem;
-    width: 2rem;
-    background-color: #f4f4f4;
-    cursor: pointer;
-}
-
 header ul li{
     list-style-type: none;
-}
-
-header ul li:hover{
-    background-color: rgb(225, 148, 96);
-    color: #c6c6c6;
-    border-radius: 8%;
-    font-size: large;
-    border-right: 2px solid royalblue;
-}
-
-header svg{
-    height: 1rem;
-    width: 1rem;
-    padding-top: .2rem;
-    color: gray;
-}
-
-ul.register{
-    display: inline;
-    line-height: 1.5rem;
 }
 
 header ul li a{
@@ -67,6 +39,24 @@ header ul li a{
     text-decoration: none;
 }
 
+header ul li:hover{
+    background-color: rgb(225, 148, 96);
+    color: #c6c6c6;
+    border-radius: 8%;
+    border-right: 2px solid royalblue;
+}
+
+header svg{
+    height: 1rem;
+    width: 1rem;
+    padding-top: .3rem;
+    color: gray;
+}
+
+/* ul.register{
+    display: inline;
+    line-height: 1.5rem;
+} */
 
 /* section */
 
@@ -106,13 +96,8 @@ form{
 }
 
 .section3{
-    
     text-align: center;
 }
-
-/* .a-dog{
-    line-height: 2rem;
-} */
 
 .section3 figure img{
     height: 40%;
@@ -125,17 +110,28 @@ div.dog{
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
     background-color: #ebebeb;
     padding-bottom: 3rem;
-    /* border: .4px solid #c4c4c4; */
 }
 
 
 /* media screen adjustments */
 
 @media (min-width: 768px) {
-    header ul li{
-        list-style-type: none;
-        display: inline-block;
-        padding: .5rem;
+    body{
+        font-size: large;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem .8rem;
+    }
+
+    menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: .5rem .8rem; */
     }
 
     #menuIcon{
@@ -144,14 +140,18 @@ div.dog{
 
     #menuList{
         display: block;
-        cursor: pointer;
+    }
+
+    header ul li{
+        display: inline-block;
+        padding: .4rem;
     }
 
     .section1{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        padding: 3rem;
+        padding: 5rem 2rem;
     }
 
     form{
@@ -161,7 +161,7 @@ div.dog{
 
     figure img{
         height: auto;
-        width: 70vw;
+        width: auto;
     }
 
     .doggo-img{
@@ -175,5 +175,4 @@ div.dog{
         margin-top: 1rem;
         padding-bottom: 3rem;
     }
-
 }
