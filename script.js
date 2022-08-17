@@ -1,16 +1,19 @@
 const menuIcon = document.querySelector("#menuIcon");
 const menuList = document.querySelector("#menuList");
-// const register = document.querySelector("#register");
+const header = document.querySelector("header");
+const menu = document.querySelector("menu");
+// const register = document.querySelector(".register");
 menuIcon.addEventListener("click", () => {
   if ((menuList.style.display = "none")) {
     menuList.style.display = "block";
-    // register.style.display = "inline-block";
   } else {
     menuList.style.display = "none";
-    // menuIcon.style.display = "none";
+    // header.style.position = "fixed";
   }
 });
 
+// const secondDog = document.getElementsByClassName("second-dog");
+// secondDog.style.marginTop = "1rem";
 //**** ======NEW DOG BREEDS=========
 const btn = document.querySelector("#btn");
 const dogs = document.querySelector("#dogs");

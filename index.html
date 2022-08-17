@@ -8,7 +8,6 @@
   <body>
 
     <!-- ==========HEADER SECTION========== -->
-
     <header>
       <span id="menuIcon">
         <svg
@@ -85,7 +84,7 @@
             <li><a href="#">Socials</a></li>
           </ul>
           <!-- registration -->
-          <div class="register">
+          <div class="register active">
               <button class="log-in">Log in</button>
               <button class="sign-in">Sign In</button>
            </div>
@@ -94,7 +93,7 @@
 
     <!-- =======FEATURES/ MAIN SECTION======== -->
 
-    <main class="">
+    <main>
       <!-- Doggo Info -->
       <section class="section1">
         <div>
@@ -139,11 +138,11 @@
 
       <!-- ========DOGS SECTION======= -->
       <section class="section3">
-        <span class="dropdown">
+        <span>
           <p>
             Clearance sales!
             </p>
-            <img src="icons8-drag-list-down-30.png" alt="dropdown" />
+            <img class="dropdown" src="icons8-drag-list-down-30.png" alt="dropdown" />
           </p>
         </span>
 
@@ -152,7 +151,7 @@
       <div class="dog-wrapper">
         <div class="dogs">       
             <!-- First dog -->
-            <div class="dog">
+            <div class="dog first-dog">
             <figure>
               <img src="images/border collie dog.jpg" alt="smiling dog" />
               <figcaption> Collie </figcaption>
@@ -161,19 +160,18 @@
           </div>
 
           <!-- Second dog -->
-
-          <div class="dog">
+          <div class="dog second-dog">
             <figure>
               <img src="images/Lhasa apso dog.jpg" alt="cute puppy" />
               <figcaption>
-               Micky
+               Mickey
               </figcaption>
             </figure>
               <label>$300</label>
           </div>
 
           <!-- Third dog  -->
-          <div class="dog">
+          <div class="dog third-dog">
             <figure>
               <img
                 src="images/german shepherd.jpg"
@@ -188,7 +186,7 @@
         </div>
 
         
-        <div class="dogs">
+        <div class="dogs fourth-dog">
             <!-- Fourth dog -->
             <div class="dog">
               <figure>
@@ -202,7 +200,7 @@
 
           <!-- Fifth dog -->
 
-          <div class="dog">
+          <div class="dog fifth-dog">
             <figure>
               <img src="images/Pug_green_grass.jpg" alt="cute puppy" />
               <figcaption>
@@ -228,18 +226,13 @@
       </section>
 
       <!-- =======FOOTER===== -->
-      <div
-        class="bg-indigo-800 text-indigo-300 md:flex justify-between p-2 font-mono text-xs"
-      >
-        <div>
-          <h2>Join our Newsletter</h2>
-          <input type="e-mail" /> <button>Join</button>
-        </div>
-
-        <div class="md:flex items-center pt-3">
-          <h2>Copyright &copy Doggos 2022</h2>
-        </div>
-      </div>
+      <footer>
+        <h2>Join our Newsletter</h2>
+        <label for="email" aria-required="true" aria-multiline="false"></label>
+          <input type="e-mail" /> 
+          <button>Join</button>
+          <p>Copyright &copy Doggos 2022. Made by Sandra Makis</p>
+      </footer>
     </main>
 
     <script src="script.js"></script>

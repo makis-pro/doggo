@@ -10,28 +10,15 @@ body{
     font-size: small;
 }
 
-
 /* header styles  */
 
-#menuIcon{
-    cursor: pointer;
-    padding: .4rem;
-    background-color: white;
-}
-
-#menuList{
-    display: none;
-}
-
-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem .8rem;
+header{
+    padding: .5rem 0 0;
 }
 
 header ul li{
     list-style-type: none;
+    line-height: 2srem;
 }
 
 header ul li a{
@@ -53,20 +40,52 @@ header svg{
     color: gray;
 }
 
-/* ul.register{
-    display: inline;
-    line-height: 1.5rem;
-} */
+menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .8rem;
+    position: relative;
+}
 
-/* section */
+#menuIcon{
+    cursor: pointer;
+    padding: .4rem;
+    background-color: white;
+}
+
+#menuList{
+    display: none;
+}
+
+.register{
+    right: 1%;
+    bottom: 10%;
+}
+
+.active{
+    position: fixed;
+    top: 1%;
+    height: 5.5%;
+    width: 40vw;
+    align-items: center;
+    padding: 10px;
+    margin: -10px;
+    background-color: #fffbfb;
+}
+
+/* General section */
 
 section{
     padding: 1rem;
 }
 
+/* Section 1 styles */
+
 .section1{
     background-color: rgb(215, 196, 215);
     padding: .5rem;
+    margin-top: 4px;
     text-align: center;
 }
 
@@ -91,10 +110,13 @@ button.get-started{
     margin-left: .6rem;
 }
 
+/* Section 2 styles  */
+
 form{
     line-height: 2rem;
 }
 
+/* section 3 styles */
 .section3{
     text-align: center;
 }
@@ -105,13 +127,26 @@ form{
     padding: 2rem 0 0;
 }
 
+.dropdown{
+    cursor: pointer;
+}
+
+div.dogs{
+    padding: 1.5rem;
+}
+
 div.dog{
     margin-top: 1rem;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
     background-color: #ebebeb;
     padding-bottom: 3rem;
 }
 
+footer{
+    padding: 1rem 2rem;
+    background-color: rgb(173, 211, 250);
+    color: rgb(86, 165, 245);
+}
 
 /* media screen adjustments */
 
@@ -121,17 +156,15 @@ div.dog{
     }
 
     header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: .5rem .8rem;
+        position: fixed;
+        background-color: #fffbfb;
+        width: 100%;
+        padding: .4rem;
+        margin-top: -.5rem;;
     }
 
     menu{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* padding: .5rem .8rem; */
+        margin: -.5rem 0;;
     }
 
     #menuIcon{
@@ -145,6 +178,11 @@ div.dog{
     header ul li{
         display: inline-block;
         padding: .4rem;
+    }
+
+    .active{
+        position: absolute;
+        top: .5rem;
     }
 
     .section1{
@@ -164,6 +202,10 @@ div.dog{
         width: auto;
     }
 
+    .dropdown{
+        display: none;
+    }
+
     .doggo-img{
         height: auto;
         width: auto;
@@ -172,7 +214,23 @@ div.dog{
     div.dogs{
         display: flex;
         justify-content: space-evenly;
+    }
+
+    div.dog{
+        width: 25vw;
+    }
+
+    .second-dog,
+    .fifth-dog{
+        margin-bottom: 2rem;
         margin-top: 1rem;
-        padding-bottom: 3rem;
+    }
+
+    .fifth-dog{
+        margin-bottom: 3rem;
+    }
+
+    .fourth-dog{
+        margin-top: 1rem;
     }
 }
