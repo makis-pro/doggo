@@ -27,7 +27,7 @@
       </span>
           
         <!-- </menu> -->
-        <menu>
+        <nav>
           <!-- menu list -->
           <ul id="menuList">
             <li>
@@ -85,10 +85,10 @@
           </ul>
           <!-- registration -->
           <div class="register active">
-              <button class="log-in">Log in</button>
-              <button class="sign-in">Sign In</button>
+              <button class="log-in" id="log-in">Log in</button>
+              <button class="sign-in" id="sign-in">Sign In</button>
            </div>
-        </menu>
+          </nav>
     </header>
 
     <!-- =======FEATURES/ MAIN SECTION======== -->
@@ -116,23 +116,39 @@
 
       <!-- ========GET STARTED SECTION======== -->
       <section class="section2">
-        <form>
-          <label> Full Name: </label>
+        <form id="form1">
+          <label aria-multiline="false"> Full Name: 
+          <input class="" id="fname" type="text" for="fnamw" required />
+        </label>
           <br />
-          <input class="" id="name" type="name" required />
+          <label> E-mail: 
+          <input class="" id="eMail" type="text" for="email" required />
+        </label>
           <br />
-          <label> E-mail: </label>
+          <label> Password: 
+          <input class="" id="password" type="password" for="password" required />
+        </label>
           <br />
-          <input class="" id="eMail" type="e-mail" required />
-          <br />
-          <label> Password: </label>
-          <br />
-          <input class="" id="password" type="password" required />
-          <br />
-          <label> Confirm Password: </label>
-          <br />
-          <input class="" id="confirmPassword" type="password" required />
-          <br />
+          <label> Confirm Password: 
+          <input class="" id="confirmPassword" type="password" for="password" required />
+        </label>
+          <p>Already have an account? <a href="#">Sign in</a></p>
+            <p><a href="#">Forgot password?</a>
+            <button>Log In</button> </p>
+        </form>
+
+        <form id="form2">
+          <label for="username">Username: 
+          </label>
+            <input type="text" for="username">
+            <br>
+          <label for="password" type="password">Password:</label>
+          <input type="password" name="password" id="">
+          <br>
+          <p>
+            <a href="#">Forgot password?</a>
+            <button>Log in</button>
+          </p>
         </form>
       </section>
 
@@ -188,7 +204,7 @@
         
         <div class="dogs fourth-dog">
             <!-- Fourth dog -->
-            <div class="dog">
+            <!-- <div class="dog">
               <figure>
                 <img src="images/peck from a dog.avif" alt="cute puppy" />
                 <figcaption>
@@ -196,11 +212,11 @@
                 </figcaption>
               </figure>
                 <label>$300</label>
-            </div>
+            </div> -->
 
           <!-- Fifth dog -->
 
-          <div class="dog fifth-dog">
+          <!-- <div class="dog fifth-dog">
             <figure>
               <img src="images/Pug_green_grass.jpg" alt="cute puppy" />
               <figcaption>
@@ -208,7 +224,7 @@
               </figcaption>
             </figure>
               <label>$300</label>
-          </div>
+          </div> -->
 
           <!-- Sixth dog -->
 
@@ -227,11 +243,12 @@
 
       <!-- =======FOOTER===== -->
       <footer>
-        <h2>Join our Newsletter</h2>
-        <label for="email" aria-required="true" aria-multiline="false"></label>
+        <h3>Join our Newsletter</h3>
+        <br>
+        <label for="newsletter" aria-required="true" aria-multiline="false"></label>
           <input type="e-mail" /> 
           <button>Join</button>
-          <p>Copyright &copy Doggos 2022. Made by Sandra Makis</p>
+          <p> <a href="#">Copyright</a> &copy Doggos 2022 | <a href="#">Terms and Conditions</a> | Built by <a href="#">Sandra Makis</a></p>
       </footer>
     </main>
 
