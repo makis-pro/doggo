@@ -8,8 +8,7 @@
   <body>
 
     <!-- ==========HEADER SECTION========== -->
-    <header>
-      <span id="menuIcon">
+      <!-- <span id="menuIcon">
         <svg
         id="menu"
         xmlns="http://www.w3.org/2000/svg"
@@ -24,12 +23,11 @@
           d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"
         ></path>
       </svg>
-      </span>
-          
-        <!-- </menu> -->
+      </span> -->
+
         <nav>
           <!-- menu list -->
-          <ul id="menuList">
+          <ul id="menu-list">
             <li>
               <a href="#" class="">Home </a>
               <svg
@@ -85,32 +83,25 @@
           </ul>
           <!-- registration -->
           <div class="register active">
-              <button class="log-in" id="log-in">Log in</button>
-              <button class="sign-in" id="sign-in">Sign In</button>
+              <button class="log-in" id="log-in"><a href="log-in.html">Log in</a> </button>
+              <button class="sign-in" id="sign-in"><a href="sign-in.html">Sign In</a></button>
            </div>
           </nav>
-    </header>
+          <div class="toggle" id="toggle"></div>
 
     <!-- =======FEATURES/ MAIN SECTION======== -->
 
     <main>
       <!-- Doggo Info -->
-      <section class="section1">
-        <div>
-          <h1>Welcome to Doggo City!</h1>
-          <br />
-          <p>There's never a sad day here</p>
-          <br />
-          <button class="learn-more">Learn More</button>
-          <button class="get-started">Get Started</button>
-        </div>
-        <br />
 
-        <!-- IMAGE -->
-        <div>
-          <figure class="doggo-figure">
-            <img class="doggo-img" src="images/Doggo.jpg" alt="a dog" />
-          </figure>
+      <section class="section1">
+        <div class="heading">
+          <h1>Welcome to Doggo City!</h1>
+          <p>There's never a sad day here</p>
+          <button class="learn-more"><a href="">Learn More</a></button>
+          <button class="get-started">
+            <a href="sign-in.html">Get Started</a>
+          </button>
         </div>
       </section>
 
@@ -118,7 +109,7 @@
       <section class="section2">
         <form id="form1">
           <label aria-multiline="false"> Full Name: 
-          <input class="" id="fname" type="text" for="fnamw" required />
+          <input class="" id="fname" type="text" for="fname" required />
         </label>
           <br />
           <label> E-mail: 
