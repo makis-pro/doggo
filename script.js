@@ -1,14 +1,25 @@
-const menuIcon = document.querySelector("#menuIcon");
-const menuList = document.querySelector("#menuList");
-const header = document.querySelector("header");
-const menu = document.querySelector("menu");
-menuIcon.addEventListener("click", () => {
-  if ((menuList.style.display = "none")) {
-    menuList.style.display = "block";
-  } else {
-    menuList.style.display = "none";
-  }
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+burger.addEventListener("click", () => {
+  nav.classList.toggle("open");
+  burger.classList.toggle("open");
 });
+
+// DARK THEME FUNCTION
+
+const body = document.querySelector("body");
+const header = document.querySelector("header");
+const section1 = document.querySelector(".section1");
+const toggleIcon = document.querySelector("#dark-theme");
+toggleIcon.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+  header.classList.toggle("dark-theme");
+  section1.classList.toggle("dark-theme");
+  // body.classList.toggle("dark-theme");
+  // body.classList.toggle("dark-theme");
+});
+
+// SIGN IN AND LOGGING IN FUNCTION
 
 function formFunction() {
   const logIn = document.querySelector("#log-in");
@@ -28,7 +39,6 @@ function formFunction() {
   getStarted.addEventListener("click", () => {
     if ((form1.style.display = "none")) {
       form1.style.display = "block";
-      // form1.style.transition = "2s";
     } else {
       form1.style.display = "none";
     }
@@ -40,18 +50,11 @@ function formFunction() {
       form1.style.display = "none";
     } else {
       form2.style.display = "block";
-      // form2.style.transition = "2s";
     }
   });
 }
 
 formFunction();
-
-// if ((form2.style.display = "none") && (form1.style.display = "block")) {
-//   form1.style.display = "none";
-//   form2.style.display = "none";
-// } else {
-// }
 
 const btn = document.querySelector("#btn");
 const dogs = document.querySelector("#dogs");
@@ -65,9 +68,8 @@ btn.addEventListener("click", () => {
 });
 
 const getStarted = document.querySelector("#getStarted");
-// const
 
-// ========FORM FILLING======
+// ========FORM FILLING(not fully active)======
 const eMail = document.querySelector("#eMail");
 eMail.addEventListener("click", () => {
   if (eMail.contains(".com", ".yahoo", ".outlook")) {
@@ -76,8 +78,3 @@ eMail.addEventListener("click", () => {
     alert("Please input a valid E-mail account");
   }
 });
-
-// if(eMail.contains(".com")
-// alert("Please input valid E-mail adress");
-
-// };
