@@ -6,94 +6,38 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>DOGGO</h1>
+      <div class="dark-theme" id="dark-theme"></div>
+    </header>
 
-    <!-- ==========HEADER SECTION========== -->
-      <!-- <span id="menuIcon">
-        <svg
-        id="menu"
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="30"
-        height="30"
-        viewBox="0 0 30 30"
-        style="fill: #000000"
-      >
-        <path
-          d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"
-        ></path>
-      </svg>
-      </span> -->
-
-        <nav>
-          <!-- menu list -->
-          <ul id="menu-list">
-            <li>
-              <a href="#" class="">Home </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-3 w-4 mb-0.5 inline-block"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                />
-              </svg>
-            </li>
-            <li>
-              <a href="#">About </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-3 w-4 mb-0.5 inline-block"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </li>
-            <li>
-              <a href="#">Contact </a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-3 w-4 mb-0.5 inline-block"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-            </li>
-            <li><a href="#">Socials</a></li>
-          </ul>
-          <!-- registration -->
-          <div class="register active">
-              <button class="log-in" id="log-in"><a href="log-in.html">Log in</a> </button>
-              <button class="sign-in" id="sign-in"><a href="sign-in.html">Sign In</a></button>
-           </div>
-          </nav>
-          <div class="toggle" id="toggle"></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+      <!-- registration -->
+      <div class="register active">
+        <button class="log-in" id="log-in">
+          <a href="log-in.html">Log in</a>
+        </button>
+        <button class="sign-in" id="sign-in">
+          <a href="sign-in.html">Sign In</a>
+        </button>
+      </div>
+    </nav>
 
     <!-- =======FEATURES/ MAIN SECTION======== -->
 
     <main>
-      <!-- Doggo Info -->
-
       <section class="section1">
         <div class="heading">
           <h1>Welcome to Doggo City!</h1>
@@ -105,141 +49,66 @@
         </div>
       </section>
 
-      <!-- ========GET STARTED SECTION======== -->
-      <section class="section2">
-        <form id="form1">
-          <label aria-multiline="false"> Full Name: 
-          <input class="" id="fname" type="text" for="fname" required />
-        </label>
-          <br />
-          <label> E-mail: 
-          <input class="" id="eMail" type="text" for="email" required />
-        </label>
-          <br />
-          <label> Password: 
-          <input class="" id="password" type="password" for="password" required />
-        </label>
-          <br />
-          <label> Confirm Password: 
-          <input class="" id="confirmPassword" type="password" for="password" required />
-        </label>
-          <p>Already have an account? <a href="#">Sign in</a></p>
-            <p><a href="#">Forgot password?</a>
-            <button>Log In</button> </p>
-        </form>
-
-        <form id="form2">
-          <label for="username">Username: 
-          </label>
-            <input type="text" for="username">
-            <br>
-          <label for="password" type="password">Password:</label>
-          <input type="password" name="password" id="">
-          <br>
-          <p>
-            <a href="#">Forgot password?</a>
-            <button>Log in</button>
-          </p>
-        </form>
-      </section>
-
       <!-- ========DOGS SECTION======= -->
       <section class="section3">
-        <span>
-          <p>
-            Clearance sales!
-            </p>
-            <img class="dropdown" src="icons8-drag-list-down-30.png" alt="dropdown" />
-          </p>
-        </span>
-
-        <!-- ======AVAILABLE DOGS==== -->
-
-      <div class="dog-wrapper">
-        <div class="dogs">       
-            <!-- First dog -->
+        <section>
+          <h3>CLEARANCE SALES</h3>
+          <div class="dog-wrapper">
             <div class="dog first-dog">
-            <figure>
-              <img src="images/border collie dog.jpg" alt="smiling dog" />
-              <figcaption> Collie </figcaption>
-            </figure>
-              <label>$300</label>
-          </div>
-
-          <!-- Second dog -->
-          <div class="dog second-dog">
-            <figure>
-              <img src="images/Lhasa apso dog.jpg" alt="cute puppy" />
-              <figcaption>
-               Mickey
-              </figcaption>
-            </figure>
-              <label>$300</label>
-          </div>
-
-          <!-- Third dog  -->
-          <div class="dog third-dog">
-            <figure>
-              <img
-                src="images/german shepherd.jpg"
-                alt="happy dog"
-              />
-              <figcaption>
-              Max
-              </figcaption>
-            </figure>
-              <label>$300</label>
-          </div>
-        </div>
-
-        
-        <div class="dogs fourth-dog">
-            <!-- Fourth dog -->
-            <!-- <div class="dog">
               <figure>
-                <img src="images/peck from a dog.avif" alt="cute puppy" />
-                <figcaption>
-                 Chelsea
-                </figcaption>
+                <img src="images/border collie dog.jpg" alt="smiling dog" />
+                <figcaption>Collie</figcaption>
               </figure>
-                <label>$300</label>
-            </div> -->
-
-          <!-- Fifth dog -->
-
-          <!-- <div class="dog fifth-dog">
-            <figure>
-              <img src="images/Pug_green_grass.jpg" alt="cute puppy" />
-              <figcaption>
-               Bingo
-              </figcaption>
-            </figure>
               <label>$300</label>
-          </div> -->
+            </div>
 
-          <!-- Sixth dog -->
-
-          <div class="dog">
-            <figure>
-              <img src="images/french bulldog.jpg" alt="cute dog" />
-            <figcaption>
-              Bailey
-            </figcaption>
-            </figure>
+            <!-- Second dog -->
+            <div class="dog second-dog">
+              <figure>
+                <img src="images/Lhasa apso dog.jpg" alt="cute puppy" />
+                <figcaption>Mickey</figcaption>
+              </figure>
               <label>$300</label>
+            </div>
+
+            <!-- Third dog  -->
+            <div class="dog third-dog">
+              <figure>
+                <img src="images/german shepherd.jpg" alt="happy dog" />
+                <figcaption>Max</figcaption>
+              </figure>
+              <label>$300</label>
+            </div>
+
+            <!-- Fourth dog -->
+
+            <div class="dog">
+              <figure>
+                <img src="images/french bulldog.jpg" alt="cute dog" />
+                <figcaption>Bailey</figcaption>
+              </figure>
+              <label>$300</label>
+            </div>
           </div>
-        </div>
-        </div>
+        </section>
       </section>
 
       <!-- =======FOOTER===== -->
       <footer>
         <h3>Join our Newsletter</h3>
-        <br>
-        <label for="newsletter" aria-required="true" aria-multiline="false"></label>
-          <input type="e-mail" /> 
-          <button>Join</button>
-          <p> <a href="#">Copyright</a> &copy Doggos 2022 | <a href="#">Terms and Conditions</a> | Built by <a href="#">Sandra Makis</a></p>
+        <br />
+        <label
+          for="newsletter"
+          aria-required="true"
+          aria-multiline="false"
+        ></label>
+        <input type="e-mail" />
+        <button>Join</button>
+        <p>
+          <a href="#">Copyright</a> &copy Doggos 2022 |
+          <a href="#">Terms and Conditions</a> | Built by
+          <a href="#">Sandra Makis</a>
+        </p>
       </footer>
     </main>
 
