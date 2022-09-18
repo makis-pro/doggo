@@ -162,6 +162,7 @@ button.get-started {
   background-color: #faedcd;
 }
 
+
 /* ======SECTION 1 STYLES =====  */
 
 .section1 {
@@ -261,6 +262,11 @@ div.dog button{
 
 div.dog button.remove{
   background-color: #bf2234;
+}
+
+
+.section2 button{
+  color: #fff;
 }
 
 /* Section 2 dark theme  */
