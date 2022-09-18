@@ -21,6 +21,10 @@ button {
   cursor: pointer;
 }
 
+/* button:active{
+  margin-top: .4em;
+} */
+
 li{
   list-style-type: none;
 }
@@ -109,7 +113,7 @@ nav li a{
   margin-bottom: 1em;
 }
 
-/* Open state  */
+/* Menu Open state  */
 
 nav.open{
   left: 0;
@@ -168,7 +172,7 @@ button.get-started {
 }
 
 .section1 div.heading{
-  padding-top: 5em;
+  padding-top: 4em;
   line-height: 4rem;
   text-align: center;
   color: #fff;
@@ -250,6 +254,15 @@ form input:focus {
   background-color: aliceblue;
 }
 
+div.dog button{
+  margin-top: 1em;
+  background-color: #305dd6;
+}
+
+div.dog button.remove{
+  background-color: #bf2234;
+}
+
 /* Section 2 dark theme  */
 .section2.dark-theme{
   background-color: #111;
@@ -266,12 +279,13 @@ form input:focus {
   background-color: #555;
 }
 
+/* FOOTER SECTION */
 
 footer{
-    background-color: #d4a373;
-    line-height: 1rem;
-    padding: 1rem;
-    text-align: center;
+  background-color: #8c8f72;
+  line-height: 1rem;
+  padding: 1rem;
+  text-align: center;
 } 
 
 footer input{
@@ -282,13 +296,26 @@ footer input{
 footer p{
   text-align: center;
   margin-top: 1rem;
+  /* color: #e9edc9; */
+}
+
+footer a{
   color: #e9edc9;
 }
 
-footer p a{
-  color: #e9edc9;
+footer button{
+  padding: .8em 2em;
 }
 
+footer button:hover{
+  background-color: white;
+}
+
+/* FOOTER DARK THEME */
+footer.dark-theme{
+  background-color: #000;
+  color: whitesmoke;
+}
 
 
 /* media screen adjustments */
@@ -304,7 +331,12 @@ footer p a{
   }
 
   .section1 div.heading{
-    padding-top: 8rem;
+    padding-top: 7rem;
+  }
+
+  .section2 img{
+    height: 40vh;
+    width: 20vw;
   }
 
   .section2 h3{
@@ -321,23 +353,25 @@ footer p a{
     padding: .5rem;
   }
 
-  /* figure img {
-    height: auto;
-    width: auto;
-  } */
-
+  div.dog-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
   div.dog {
     width: 25vw;
   }
 
-  .second-dog,
-  .fifth-dog {
-    margin-bottom: 2rem;
+  .third-dog,
+  .fourth-dog {
+    margin-bottom: 4rem;
     margin-top: 1rem;
   }
 
-  .fourth-dog {
-    margin-top: 1rem;
+  .second-dog,
+  .sixth-dog{
+    margin-top: 9em;
   }
 
   footer input{
