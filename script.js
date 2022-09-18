@@ -10,12 +10,17 @@ burger.addEventListener("click", () => {
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 const section1 = document.querySelector(".section1");
+const main = document.querySelector("main");
+const section2 = document.querySelector(".section2");
+const footer = document.querySelector("footer");
 const toggleIcon = document.querySelector("#dark-theme");
 toggleIcon.addEventListener("click", () => {
   body.classList.toggle("dark-theme");
   header.classList.toggle("dark-theme");
   section1.classList.toggle("dark-theme");
-  // body.classList.toggle("dark-theme");
+  main.classList.toggle("dark-theme");
+  section2.classList.toggle("dark-theme");
+  footer.classList.toggle("dark-theme");
   // body.classList.toggle("dark-theme");
 });
 
