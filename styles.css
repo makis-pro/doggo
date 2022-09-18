@@ -58,7 +58,7 @@ header h1{
 .burger{
   cursor: pointer;
   font-size: 1.2em;
-  z-index: 1;
+  z-index: 2;
 }
 
 .burger span{
@@ -99,7 +99,7 @@ nav{
   position: absolute;
   top: 0;
   left: -200px;
-  z-index: 0;
+  z-index: 1;
 }
 
 nav li a{
@@ -144,6 +144,11 @@ nav{
 
 
 /* BUTTON STYLES */
+
+button a{
+  text-decoration: none;
+}
+
 button.log-in {
   background-color: #e9edc9;
 }
@@ -159,6 +164,7 @@ button.get-started {
   background-image: url(images/french\ bulldog.jpg);
   background-size: cover;
   height: 60vh;
+  z-index: 0;
 }
 
 .section1 div.heading{
@@ -167,6 +173,7 @@ button.get-started {
   text-align: center;
   color: #fff;
   opacity: .9; 
+  transition: left ease-in .4s;
 }
 
 /* SECTION 1 DARK THEME */
@@ -175,26 +182,24 @@ button.get-started {
   background-size: cover;
 }
 
-.section1.dark-theme div.heading{
+.section1.dark-theme div.heading,
+.section2.dark-theme h3{
   color: whitesmoke;
 }
 
 
-/* ==== DIFFERNT BUTTON STYLES===== */
+/* ==== DIFFERENT BUTTON STYLES===== */
 
-button .learn-more{
+button.learn-more{
   background-color: #d4a373;
 }
 
-.section1 .get-started, button {
+.section1 .get-started {
   background-color: #faedcd;
   margin-left: .5rem;
 }
 
-/* section 2 styles  */
-.section2{
-margin: -1rem;
-}
+/* ===== FORM STYLES ==== */
 
 form {
   padding: 1rem;
@@ -213,33 +218,54 @@ form input:focus {
   background-color: #e9edc9;
 }
 
-/* ===== SECTION 3 styles ===== */
-.section3{
+/* ===== SECTION 2 styles ===== */
+.section2{
   text-align: center;
   background-color: #fefae0;
 }
 
-.section3 figure img {
+.section2 img {
   height: 40%;
   width: 85%;
   padding: 2rem 0 0;
 }
 
-.fourth-dog{
-  margin-top: -3rem;
-}
-
-.section3 .dogs {
-  padding: 1.5rem;
-}
-
-.section3 .dog {
-  margin-top: 1rem;
+.section2 .dog {
+  position: relative;
+  margin-top: 1.5em;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   background-color: #ebebeb;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
+
+.section2 label{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 15%;
+  padding: .6em;
+  border-radius: 20%;
+  transform: rotate(15deg);
+  background-color: aliceblue;
+}
+
+/* Section 2 dark theme  */
+.section2.dark-theme{
+  background-color: #111;
+}
+
+.section2.dark-theme .dog{
+  background-color: #333;
+  color: whitesmoke;
+  opacity: 1;
+}
+
+.section2.dark-theme label{
+  color: whitesmoke;
+  background-color: #555;
+}
+
 
 footer{
     background-color: #d4a373;
@@ -264,8 +290,6 @@ footer p a{
 }
 
 
-/* DARK THEME STYLES  */
-
 
 /* media screen adjustments */
 
@@ -274,17 +298,17 @@ footer p a{
     font-size: large;
   }
 
+  .section1 {
+    height: 80vh;
+    z-index: 0;
+  }
+
   .section1 div.heading{
     padding-top: 8rem;
   }
 
-  #menuIcon {
-    display: none;
-  }
-
-  .section1 {
-    height: 80vh;
-    z-index: 0;
+  .section2 h3{
+    padding-top: 3em;
   }
 
   form {
@@ -297,19 +321,10 @@ footer p a{
     padding: .5rem;
   }
 
-  figure img {
+  /* figure img {
     height: auto;
     width: auto;
-  }
-
-  .dropdown {
-    display: none;
-  }
-
-  div.dogs {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  } */
 
   div.dog {
     width: 25vw;
@@ -319,10 +334,6 @@ footer p a{
   .fifth-dog {
     margin-bottom: 2rem;
     margin-top: 1rem;
-  }
-
-  .fifth-dog {
-    margin-bottom: 3rem;
   }
 
   .fourth-dog {
