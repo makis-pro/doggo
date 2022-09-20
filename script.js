@@ -1,8 +1,10 @@
-const burger = document.querySelector(".burger");
+// MENU TOGGLE BETWEEN THE OPEN
+
+const menu = document.querySelector(".menu");
 const nav = document.querySelector("nav");
-burger.addEventListener("click", () => {
+menu.addEventListener("click", () => {
   nav.classList.toggle("open");
-  burger.classList.toggle("open");
+  menu.classList.toggle("open");
 });
 
 // DARK THEME FUNCTION
@@ -17,11 +19,15 @@ const toggleIcon = document.querySelector("#dark-theme");
 toggleIcon.addEventListener("click", () => {
   body.classList.toggle("dark-theme");
   header.classList.toggle("dark-theme");
+  header.style.transition = "all .3s";
   section1.classList.toggle("dark-theme");
+  section1.style.transition = "all .3s";
   main.classList.toggle("dark-theme");
+  main.style.transition = "all .3s";
   section2.classList.toggle("dark-theme");
+  section2.style.transition = "all .3s";
   footer.classList.toggle("dark-theme");
-  // body.classList.toggle("dark-theme");
+  footer.style.transition = "all .3s";
 });
 
 // SIGN IN AND LOGGING IN FUNCTION
