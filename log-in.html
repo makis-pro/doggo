@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
+      <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>DOGGO</h1>
+      <div class="dark-theme" id="dark-theme"></div>
+    </header>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -27,19 +36,7 @@
     <!-- =======FEATURES/ MAIN SECTION======== -->
 
     <main>
-      <!-- Doggo Info -->
-      <section class="section1">
-        <div class="heading">
-          <h1>Welcome to Doggo City!</h1>
-          <p>There's never a sad day here</p>
-          <button class="learn-more"><a href="">Learn More</a></button>
-          <button class="get-started">
-            <a href="log-in.html">Get Started</a>
-          </button>
-        </div>
-      </section>
-
-      <!-- ========GET STARTED SECTION======== -->
+      <!-- ========LOG IN FORM======== -->
       <form id="form1" class="log-in-form">
         <h3 style="text-decoration: underline; line-height: 6em">
           Create an account with Doggo
@@ -84,8 +81,11 @@
             required
           />
         </label>
-        <p>Already have an account? <a href="sign-in.html">Sign in</a></p>
-        <button style="padding: 0.5em 1em">Log In</button>
+        <span>
+          <a href="sign-in.html">I already have an account</a>
+          <button><a href="#">Log in</a></button>
+        </span>
+        <!-- <button>Log In</button> -->
       </form>
     </main>
     <script src="script.js"></script>
