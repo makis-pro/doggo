@@ -21,10 +21,6 @@ button {
   cursor: pointer;
 }
 
-/* button:active{
-  margin-top: .4em;
-} */
-
 li{
   list-style-type: none;
 }
@@ -50,12 +46,12 @@ div.dark-theme{
 header{
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #e9edc9;
-  padding: 15px;
+  padding: .5em 2em;
 }
 
 header h1{
@@ -64,8 +60,7 @@ header h1{
 
 .menu{
   cursor: pointer;
-  font-size: 1.2em;
-  z-index: 2;
+  font-size: 1.4em;
 }
 
 .menu span{
@@ -83,16 +78,17 @@ header.dark-theme{
   color: whitesmoke;
 }
 
-header.dark-theme .burger span{
-  background-color: white;
+header.dark-theme > #dark-theme{
+  background-color: whitesmoke;
 }
 
-header.dark-theme div.dark-theme{
-  cursor: pointer;
-  background-color: whitesmoke;
-  height: 1.3em;
-  width: 1.3em;
-  border-radius: 100%;
+header.dark-theme > div.menu{
+  background-color: #111;
+  padding-top: 8px;
+}
+
+header.dark-theme > div.menu span{
+  background-color: white;
 }
 
 /* ======NAV STYLES ===== */
@@ -100,17 +96,16 @@ header.dark-theme div.dark-theme{
 nav{
   padding: 1rem;
   padding-top: 5rem;
-  background-color: #222;
-  height: 100vh;
+  background-color: #bcc57e;
+  height: 100%;
   width: 200px;
   position: absolute;
-  top: 0;
+  top: 5%;
   left: -200px;
-  z-index: 1;
 }
 
 nav li a{
-  color: #eee;
+  color: #000;
   font-size: 1em;
   display: block;
   margin-bottom: 1em;
@@ -120,11 +115,12 @@ nav li a{
 
 nav.open{
   left: 0;
+  position: fixed;
+  z-index: 6;
 }
 
 .menu.open span:nth-child(1){
   transform: rotate(45deg) translateY(8px);
-  background-color: #fff;
   width: 1em;
 }
 
@@ -134,9 +130,8 @@ nav.open{
 }
 
 .menu.open span:nth-child(3){
-   transform: rotate(-45deg) translateY(-8px);
-   background-color: #fff;
-   width: 1em;
+  transform: rotate(-45deg) translateY(-8px);
+  width: 1em;
 }
 
 /* MENU transitions */
@@ -147,6 +142,41 @@ nav{
 
 .menu span{
   transition: all ease-in 0.3s;
+}
+
+/* MENU DARK THEME */
+
+
+
+/* NAV DARK THEME */
+
+nav.dark-theme{
+  background-color: #333;
+}
+
+nav.dark-theme li a{
+  color: #eee;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+nav.dark-theme li a:hover{
+  color: white;
+  transition: all .3s;
+}
+
+nav.dark-theme button:hover{
+  background-color: rgb(241, 205, 205);
+  transition: all .3s;
+}
+
+nav.dark-theme button a:hover{
+  color: #111;
+}
+
+nav button.log-in a:active{
+  margin-top: 5px;
 }
 
 
@@ -210,26 +240,48 @@ button.learn-more{
 /* ===== FORM STYLES ==== */
 
 form {
-  padding: 1rem;
-  line-height: 4rem;
-  padding-left: 8rem;
+  padding: 3rem 0 0 1em;
+  line-height: 3rem;
+  height: 100vh;
   background-color: #faedcd;
 }
 
 form input {
-  width: 60%;
-  padding: .7rem;
-  text-align: left;
+  width: 90%;
+  padding: .5em;
 }
 
 form input:focus {
   background-color: #e9edc9;
 }
 
+form span{
+  display: block;
+}
+
+form a{
+  color: rgb(48, 105, 212);
+}
+
+form button a{
+  color: green;
+  font-size: 1.1em;
+}
+
+form button:hover{
+  background-color: rgb(176, 230, 176);
+  transition: all .3s;
+}
+
+form button a:hover{
+  color: #111;
+}
+
 /* ===== SECTION 2 styles ===== */
 .section2{
   text-align: center;
   background-color: #fefae0;
+  z-index: 1;
 }
 
 .section2 img {
@@ -356,11 +408,14 @@ footer.dark-theme{
   }
 
   form {
+    line-height: 3.5em;
     text-align: center;
     font-size: large;
+    height: 100vh;
+    padding: 5em 2em;
   }
 
-  input {
+  form input {
     width: 50%;
     padding: .5rem;
   }
@@ -374,10 +429,6 @@ footer.dark-theme{
   div.dog {
     width: 25vw;
   }
-
-  /* .first-dog{
-    margin-top: 20em;
-  } */
 
   footer input{
     width: 40vw;
