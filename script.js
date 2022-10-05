@@ -81,19 +81,20 @@ addToCart.forEach((cart) => {
     }, 500);
     console.log(cart);
 
-    displayTrashBin();
+    // displayTrashBin();
   });
 });
 
-function displayTrashBin() {
-  const span = document.querySelectorAll(".dog span");
-  const dog = document.querySelectorAll(".dog");
+// function displayTrashBin() {
+//   const dogSect = document.querySelectorAll(".dog");
+//   const span = document.querySelectorAll(".dog span");
 
-  const trashIcon = `<i class="fa-solid fa-trash-can"></i>`;
-
-  span.innerHTML += trashIcon;
-  dog.appendChild(span);
-}
+//   const icon = document.createElement("i");
+//   const deleteIcon = `<i class="fa-solid fa-trash-can"></i>`;
+//   icon.innerHTML += deleteIcon;
+//   span.appendChild(icon);
+//   dogSect.appendChild(span);
+// }
 
 // DELETE CART fUNCTION
 
