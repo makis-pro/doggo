@@ -358,7 +358,7 @@ div.dog button.remove{
 /* FOOTER SECTION */
 
 footer{
-  background-color: #8c8f72;
+  background-color: #46463e;
   line-height: 1rem;
   padding: 1.5em .5em;
   text-align: center;
@@ -369,9 +369,8 @@ footer input{
   padding: .4rem;
 }
 
-footer p{
-  margin-top: 1rem;
-  color: whitesmoke;
+footer .copyright{
+  padding-top: 15px;
 }
 
 footer a{
@@ -384,6 +383,31 @@ footer button{
 
 footer button:hover{
   background-color: white;
+}
+
+footer .socials{
+  padding: 1.5rem 0;
+}
+
+section.socials .fa{
+  padding: .5rem 5px;
+  font-size: 1.5rem;
+}
+
+.fa-github{
+  color: black;
+}
+
+.fa-twitter{
+  color: #11b4f4;
+}
+
+.fa-linkedin{
+  color: #0e76a8;
+}
+
+.fa:hover {
+  opacity: 0.8;
 }
 
 /* FOOTER DARK THEME */
